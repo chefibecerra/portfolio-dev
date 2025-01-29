@@ -1,0 +1,30 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+const EXPERIENCE = [
+  {
+    date: "Actualmente...",
+    title: "Soporte Avanzado",
+    company: "Avatel Telecom",
+    description:
+      "Soporte técnico de nivel 2 para clientes de empresa. Configuración de centralitas y routers. Gestion de incidencias de WiMax y FTTH. Mantenimiento de servidores y redes. Desarrollo de aplicaciones web internas.",
+    //link: "https://twitch.tv/midudev",
+  },
+  {
+    date: "Septiembre 2022",
+    title: "Tecnico I+M",
+    company: "WiHu",
+    description:
+      "Instalación y mantenimiento de redes de fibra óptica. Configuración de routers y ONTs. Instalación de equipos de red. Resolución de incidencias de red WiMaxy fibra óptica.",
+  },
+];
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
